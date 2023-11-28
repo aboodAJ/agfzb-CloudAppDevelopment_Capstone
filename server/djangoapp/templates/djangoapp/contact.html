@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{%url 'djangoapp:index'%}">Best Cars</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="btn btn-link" href="{%url 'djangoapp:about'%}">about us</a>
+                        <a class="btn btn-link" href="{%url 'djangoapp:contact'%}">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <form style="margin: 50px;width: 600px;">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text small">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputMessage" class="form-label">Message</label>
+              <input type="text" class="form-control" id="exampleInputMessage">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <div class="alert alert-secondary" role="alert" style="margin: 50px;width: 600px;">
+            or contact us via email: example@gmail.com
+          </div>
+    </body>
+</html>
